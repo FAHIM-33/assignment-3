@@ -63,7 +63,7 @@
       <!-- Nav Responsive for small device -->
       <nav class=" navbar bg-base-100 container mx-auto lg:hidden">
 
-        <div class="navbar-start flex items-center justify-center md:gap-4">
+        <div class="navbar-start flex items-center justify-start md:gap-4">
           <img src="./images/logo.png" alt="" class="block scale-50">
           <h1 class="text-3xl font-bold whitespace-nowrap">Fruit Burst</h1>
         </div>
@@ -240,14 +240,13 @@
             <hr class="my-6 w-4/5 mx-auto">  
             <p>Apples</p>
             <div class="rating my-6">
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"  />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked/>
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
             </div>
-
-            <a href="" class="text-red-600 block">Details</a>
+            <a onclick="my_modal_1.showModal()" class="text-red-600 block">Details</a>
           </div>
           
 
@@ -257,14 +256,13 @@
             <hr class="my-6 w-4/5 mx-auto">  
             <p>Grape</p>
             <div class="rating my-6">
-              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400"  />
-              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked/>
-              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
-
-            <a href="" class="text-red-600 block">Details</a>
+            <a onclick="my_modal_2.showModal()" class="text-red-600 block">Details</a>
           </div>
 
 
@@ -274,14 +272,14 @@
             <hr class="my-6 w-4/5 mx-auto">  
             <p>Orange</p>
             <div class="rating my-6">
-              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
-              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400"  />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked/>
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
             </div>
 
-            <a href="" class="text-red-600 block">Details</a>
+            <a onclick="my_modal_3.showModal()" class="text-red-600 block">Details</a>
           </div>
 
 
@@ -293,20 +291,105 @@
             <p>Mango</p>
             <div class="rating my-6">
               <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
-              <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400"  />
+              <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked/>
               <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
             </div>
 
-            <a href="" class="text-red-600 block">Details</a>
+            <a onclick="my_modal_4.showModal()" class="text-red-600 block">Details</a>
           </div>
         </div>
         <div class="text-center mt-12">
           <button class="btn bg-komola rounded-md md:rounded-lg text-white text-lg md:text-2xl font-semibold border-0 normal-case py-2 px-4 md:py-5 md:px-7 h-auto">Shop All</button>
         </div>
-      </section>
 
+        <!-- MODAL DETAILS -->
+        <dialog id="my_modal_1" class="modal">
+          <form method="dialog" class="modal-box text-center py-16">
+            <!-- Card goes here -->
+            <img src="./images/fruit6.png" class="mx-auto block w-2/5">
+            <h3 class="font-bold text-4xl my-6">Apples</h3>
+            <p class="py-4 w-4/5 mx-auto">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="rating my-4">
+              <input type="radio" name="rating-1" class="mask mask-star-1 bg-orange-400" />
+              <input type="radio" name="rating-1" class="mask mask-star-1 bg-orange-400" checked />
+              <input type="radio" name="rating-1" class="mask mask-star-1 bg-orange-400" />
+              <input type="radio" name="rating-1" class="mask mask-star-1 bg-orange-400" />
+              <input type="radio" name="rating-1" class="mask mask-star-1 bg-orange-400" />
+            </div>
+            <div class="modal-action w-fit mx-auto">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="outline-none btn btn-outline btn-error text-xl mr-6">Close</button>
+              <a class="btn btn-error normal-case text-white text-xl">Buy Now</a>
+            </div>
+          </form>
+        </dialog>
+        <dialog id="my_modal_2" class="modal">
+          <form method="dialog" class="modal-box text-center py-16">
+            <!-- Card goes here -->
+            <img src="./images/fruit1.png" class="mx-auto block w-2/5">
+            <h3 class="font-bold text-4xl my-6">Grapes</h3>
+            <p class="py-4 w-4/5 mx-auto">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="rating my-4">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <div class="modal-action w-fit mx-auto">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="outline-none btn btn-outline btn-error text-xl mr-6">Close</button>
+              <a class="btn btn-error normal-case text-white text-xl">Buy Now</a>
+            </div>
+          </form>
+        </dialog>
+        <dialog id="my_modal_3" class="modal">
+          <form method="dialog" class="modal-box text-center py-16">
+            <!-- Card goes here -->
+            <img src="./images/fruit2.png" class="mx-auto block w-2/5">
+            <h3 class="font-bold text-4xl my-6">Orange</h3>
+            <p class="py-4 w-4/5 mx-auto">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="rating my-4">
+              <input type="radio" name="rating-3" class="mask mask-star-3 bg-orange-400" />
+              <input type="radio" name="rating-3" class="mask mask-star-3 bg-orange-400" checked />
+              <input type="radio" name="rating-3" class="mask mask-star-3 bg-orange-400" />
+              <input type="radio" name="rating-3" class="mask mask-star-3 bg-orange-400" />
+              <input type="radio" name="rating-3" class="mask mask-star-3 bg-orange-400" />
+            </div>
+            <div class="modal-action w-fit mx-auto">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="outline-none btn btn-outline btn-error text-xl mr-6">Close</button>
+              <a class="btn btn-error normal-case text-white text-xl">Buy Now</a>
+            </div>
+          </form>
+        </dialog>
+        <dialog id="my_modal_4" class="modal">
+          <form method="dialog" class="modal-box text-center py-16">
+            <!-- Card goes here -->
+            <img src="./images/fruit3.png" class="mx-auto block w-2/5">
+            <h3 class="font-bold text-4xl my-6">Mango</h3>
+            <p class="py-4 w-4/5 mx-auto">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="rating my-4">
+              <input type="radio" name="rating-4" class="mask mask-star-4 bg-orange-400" />
+              <input type="radio" name="rating-4" class="mask mask-star-4 bg-orange-400" checked />
+              <input type="radio" name="rating-4" class="mask mask-star-4 bg-orange-400" />
+              <input type="radio" name="rating-4" class="mask mask-star-4 bg-orange-400" />
+              <input type="radio" name="rating-4" class="mask mask-star-4 bg-orange-400" />
+            </div>
+            <div class="modal-action w-fit mx-auto">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="outline-none btn btn-outline btn-error text-xl mr-6">Close</button>
+              <a class="btn btn-error normal-case text-white text-xl">Buy Now</a>
+            </div>
+          </form>
+        </dialog>
+       
+        <!-- MODAL DETAILS end-->
+
+      </section>
+<!-- Meet the members -->
       <section class="team container mx-auto text-center mt-32 p-5 lg:py-28 lg:px-60 rounded-lg">
         <h1 class="text-2xl md:text-5xl  font-bold">Meet the team Members</h1>
         <p class="mt-6 mb-12 w-4/5 mx-auto leading-6 md:w-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br class="hidden md:block">
@@ -355,8 +438,8 @@
           </div>
         </div>
       </section>
-
-      <section class="why? container mx-auto mt-16">
+<!-- Just.. Why??? --6
+      7section class="why? container mx-auto mt-16">
         <h1 class="text-center text-2xl md:text-5xl font-bold">Why Choose Us</h1>
         <p class="text-center mt-6 mb-12 w-4/5 mx-auto md:w-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br class="hidden md:block">
            Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -431,7 +514,7 @@
       </section>
 
     </main>
-    
+
     <footer class="bg-[#121212] mt-16">
       <div class="container mx-auto text-center px-5 py-16 md:p-16 lg:p-32">
         <div class="w-fit flex items-center mx-auto gap-4">
@@ -455,7 +538,7 @@
           <a href=""><img src="./icons/Group 49.svg" alt=""></a>
         </div>
       </div>
-    </footer>
+    </8ooter>
 
 </body>
 
