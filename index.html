@@ -34,7 +34,7 @@
   </script>
 </head>
 
-<body class="font-Lato w-auto">
+<body class="font-Lato w-full">
   <header class="px-5 md:px-0 md:pt-5">
     <nav
       class="lg:flex hidden justify-between items-center container mx-auto px-14 py-7 md:bg-komola md:text-white max-h-fit rounded-full">
@@ -188,15 +188,15 @@
     </header>
 
     <main class="px-5">
-
+<!-- Deal section -->
       <section class="Deal mt-6 md:mt-40 container mx-auto">
-        <div class="UpperSection flex flex-col md:flex-row justify-between mb-11">
-          <div class="text-center md:text-start">
+        <div class="UpperSection flex flex-col lg:flex-row justify-between mb-11">
+          <div class="text-center lg:text-start">
             <h1 class="text-xl md:text-5xl font-extrabold mb-6">Deal of the day</h1>
             <p class="font-medium text-sm md:text-base md:w-auto w-2/3 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br class="md:block hidden">
                Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
-          <div class="justify-center mt-5 md:mt-0 lg:items-center md:justify-end grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="justify-center mt-5 lg:mt-0 items-start lg:justify-end grid grid-flow-col gap-5 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:15;"></span>
@@ -357,8 +357,29 @@
       </section>
 
     </main>
-    <footer>
-
+    <footer class="bg-[#121212]">
+      <div class="container mx-auto text-center lg:p-32">
+        <div class="w-fit flex items-center mx-auto gap-4">
+          <img src="./images/logo.png" alt="">
+          <h1 class="text-white lg:text-4xl font-semibold">Fruit Burst</h1>
+        </div>
+        <div class="grid grid-cols-3 md:grid-cols-6 text-white w-fit mx-auto gap-6 lg:gap-14 my-16">
+          <a>Home</a>
+          <a>About Us</a>
+          <a>Shop</a>
+          <a>All Fruits</a>
+          <a>Support</a>
+          <a>My Account</a>
+        </div>
+        <div class="icons grid grid-cols-3 lg:grid-cols-6 w-fit mx-auto gap-4 lg:gap-10">
+          <a href=""><img src="./icons/facebook 1.svg" alt=""></a>
+          <a href=""><img src="./icons/linkedin 1.svg" alt=""></a>
+          <a href=""><img src="./icons/twitter 1.svg" alt=""></a>
+          <a href=""><img src="./icons/instagram 1.svg" alt=""></a>
+          <a href=""><img src="./icons/apple 1.svg" alt=""></a>
+          <a href=""><img src="./icons/Group 49.svg" alt=""></a>
+        </div>
+      </div>
     </footer>
 
 
