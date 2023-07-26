@@ -7,3 +7,7 @@
 .brg{
     border: 1px solid green;
 }
+
+.fruits-array figcaption{
+    margin-top: 1rem;
+}
