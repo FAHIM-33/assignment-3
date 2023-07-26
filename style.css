@@ -31,3 +31,9 @@ p{
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
+.kochu a:nth-child(-n+4){
+    flex-basis: 20%;
+}
+.icons a{
+    width: 2rem;
+}
