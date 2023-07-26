@@ -14,3 +14,20 @@
 p{
     color: rgba(18, 18, 18, 0.60);
 }
+.carousel > p{
+    color: white;
+}
+.team{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.651)),url(./images/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+}
+.team p{
+    color: white;
+}
+.team h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
