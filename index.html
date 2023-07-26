@@ -22,7 +22,6 @@
   <script>
     tailwind.config = {
       theme: {
-          light,
         extend: {
           colors: {
             clifford: '#da373d',
@@ -36,7 +35,7 @@
 </head>
 
 <body class="font-Lato w-auto">
-  <header>
+  <header class="px-5 md:px-0 md:pt-5">
     <nav
       class="lg:flex hidden justify-between items-center container mx-auto px-14 py-7 md:bg-komola md:text-white max-h-fit rounded-full">
       <div class="">
@@ -64,9 +63,9 @@
       <!-- Nav Responsive for small device -->
       <nav class=" navbar bg-base-100 container mx-auto lg:hidden">
 
-        <div class="navbar-start flex items-center justify-center gap-4">
-          <img src="./images/logo.png" alt="" class="block">
-          <h1 class="text-3xl font-bold">Fruit Burst</h1>
+        <div class="navbar-start flex items-center justify-center md:gap-4">
+          <img src="./images/logo.png" alt="" class="block scale-50">
+          <h1 class="text-3xl font-bold whitespace-nowrap">Fruit Burst</h1>
         </div>
         <div class="navbar-end">
           <div class="dropdown relative">
@@ -101,18 +100,18 @@
       </nav>
 
 <!-- Banner card -->
-      <section class="banner container mx-auto mt-14 relative">
+      <section class="banner container mx-auto mt-6 md:mt-14 relative">
         <div class="carousel w-full rounded-lg z-10">
 
           <div id="slide1" class="slide carousel-item relative w-full text-white text-center ">
        
               <img src="./images/banner1.png" class="w-full" />
    
-            <div class="absolute left-0 right-0 mx-auto top-0 bottom-0 bg-[#00000080]">
-              <h1 class="font-bold text-7xl mt-16">Exotic tastes at your <br>
+            <div class="absolute md:scale-100 left-0 right-0 mx-auto top-0 bottom-0 bg-[#00000080]">
+              <h1 class="font-bold text-2xl md:text-7xl mt-6 md:mt-16">Exotic tastes at your <br>
                  doorstep</h1>
-              <p class="mt-6 mb-8">We supply highly quality organic products</p>
-              <button class="btn bg-komola text-white text-lg font-bold border-0 normal-case py-5 px-7 h-auto ">Shop Now</button>
+              <p class="md:mt-6 mb-4 text-sm md:text-xl text-white">We supply highly quality organic products</p>
+              <button class="btn bg-komola rounded-md md:rounded-lg text-white text-lg md:text-2xl font-semibold border-0 normal-case py-2 px-4 md:py-5 md:px-7 h-auto">Shop Now</button>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" class="btn btn-circle bg-black text-white border-0 text-2xl h-auto font-light">❮</a> 
@@ -122,11 +121,11 @@
 
           <div id="slide2" class="slide carousel-item relative w-full text-white text-center ">
             <img src="./images/banner2.png" class="w-full" />
-            <div class="absolute left-0 right-0 mx-auto top-0 bottom-0 bg-[#00000080]">
-              <h1 class="font-bold text-7xl mt-16">Exotic tastes at your <br>
+            <div class="absolute md:scale-100 left-0 right-0 mx-auto top-0 bottom-0 bg-[#00000080]">
+              <h1 class="font-bold text-2xl md:text-7xl mt-6 md:mt-16">Exotic tastes at your <br>
                  doorstep</h1>
-              <p class="mt-6 mb-8">We supply highly quality organic products</p>
-              <button class="btn bg-komola text-white text-lg font-bold border-0 normal-case py-5 px-7 h-auto ">Shop Now</button>
+              <p class="md:mt-6 mb-4 text-sm">We supply highly quality organic products</p>
+              <button class="btn bg-komola rounded-md md:rounded-lg text-white text-lg md:text-2xl font-semibold border-0 normal-case py-2 px-4 md:py-5 md:px-7 h-auto">Shop Now</button>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle bg-black text-white border-0 text-2xl h-auto font-light">❮</a> 
@@ -136,11 +135,11 @@
 
           <div id="slide3" class="slide carousel-item relative w-full text-white text-center ">
             <img src="./images/banner3.png" class="w-full" />
-            <div class="absolute left-0 right-0 mx-auto top-0 bottom-0 bg-[#00000080]">
-              <h1 class="font-bold text-7xl mt-16">Exotic tastes at your <br>
+            <div class="absolute md:scale-100 left-0 right-0 mx-auto top-0 bottom-0 bg-[#00000080]">
+              <h1 class="font-bold text-2xl md:text-7xl mt-6 md:mt-16">Exotic tastes at your <br>
                  doorstep</h1>
-              <p class="mt-6 mb-8">We supply highly quality organic products</p>
-              <button class="btn bg-komola text-white text-lg font-bold border-0 normal-case py-5 px-7 h-auto ">Shop Now</button>
+              <p class="md:mt-6 mb-4 text-sm">We supply highly quality organic products</p>
+              <button class="btn bg-komola rounded-md md:rounded-lg text-white text-lg md:text-2xl font-semibold border-0 normal-case py-2 px-4 md:py-5 md:px-7 h-auto">Shop Now</button>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide2" class="btn btn-circle bg-black text-white border-0 text-2xl h-auto font-light">❮</a> 
@@ -150,11 +149,11 @@
 
           <div id="slide4" class="slide carousel-item relative w-full text-white text-center ">
             <img src="./images/banner4.png" class="w-full" />
-            <div class="absolute left-0 right-0 mx-auto top-0 bottom-0 bg-[#00000080]">
-              <h1 class="font-bold text-7xl mt-16">Exotic tastes at your <br>
+            <div class="absolute md:scale-100 left-0 right-0 mx-auto top-0 bottom-0 bg-[#00000080]">
+              <h1 class="font-bold text-2xl md:text-7xl mt-6 md:mt-16">Exotic tastes at your <br>
                  doorstep</h1>
-              <p class="mt-6 mb-8">We supply highly quality organic products</p>
-              <button class="btn bg-komola text-white text-lg font-bold border-0 normal-case py-5 px-7 h-auto ">Shop Now</button>
+              <p class="md:mt-6 mb-4 text-sm">We supply highly quality organic products</p>
+              <button class="btn bg-komola rounded-md md:rounded-lg text-white text-lg md:text-2xl font-semibold border-0 normal-case py-2 px-4 md:py-5 md:px-7 h-auto">Shop Now</button>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" class="btn btn-circle bg-black text-white border-0 text-2xl h-auto font-light">❮</a> 
@@ -188,8 +187,125 @@
       </section>
     </header>
 
-    <main>
+    <main class="px-5">
 
+      <section class="Deal mt-6 md:mt-40 container mx-auto">
+        <div class="UpperSection flex flex-col md:flex-row justify-between mb-11">
+          <div class="text-center md:text-start">
+            <h1 class="text-xl md:text-5xl font-extrabold mb-6">Deal of the day</h1>
+            <p class="font-medium text-sm md:text-base md:w-auto w-2/3 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br class="md:block hidden">
+               Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="justify-center mt-5 md:mt-0 lg:items-center md:justify-end grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <div>
+              <img src="./icons/Frame.svg" class="block w-8 mt-2" alt="">
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div>
+              <img src="./icons/Frame.svg" class="block w-8 mt-2" alt="">
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div>
+              <img src="./icons/Frame.svg" class="block w-8 mt-2" alt="">
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:53;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+
+        <div class="CardsContainer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="single-card text-center py-12 border border-[rgba(18, 18, 18, 0.10)] rounded-lg">
+            <img src="./images/fruit6.png" alt="" class="mx-auto mb-12">
+            <h3 class="text-2xl font-semibold">12.90$ - 18.85$</h3>
+            <hr class="my-6 w-4/5 mx-auto">  
+            <p>Apples</p>
+            <div class="rating my-6">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+
+            <a href="" class="text-red-600 block">Details</a>
+          </div>
+          
+
+          <div class="single-card text-center py-12 border border-[rgba(18, 18, 18, 0.10)] rounded-lg">
+            <img src="./images/fruit1.png" alt="" class="mx-auto mb-12">
+            <h3 class="text-2xl font-semibold">12.90$ - 18.85$</h3>
+            <hr class="my-6 w-4/5 mx-auto">  
+            <p>Grape</p>
+            <div class="rating my-6">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+
+            <a href="" class="text-red-600 block">Details</a>
+          </div>
+
+
+          <div class="single-card text-center py-12 border border-[rgba(18, 18, 18, 0.10)] rounded-lg">
+            <img src="./images/fruit2.png" alt="" class="mx-auto mb-12">
+            <h3 class="text-2xl font-semibold">12.90$ - 18.85$</h3>
+            <hr class="my-6 w-4/5 mx-auto">  
+            <p>Orange</p>
+            <div class="rating my-6">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+
+            <a href="" class="text-red-600 block">Details</a>
+          </div>
+
+
+
+          <div class="single-card text-center py-12 border border-[rgba(18, 18, 18, 0.10)] rounded-lg">
+            <img src="./images/fruit3.png" alt="" class="mx-auto mb-12">
+            <h3 class="text-2xl font-semibold">12.90$ - 18.85$</h3>
+            <hr class="my-6 w-4/5 mx-auto">  
+            <p>Mango</p>
+            <div class="rating my-6">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+
+            <a href="" class="text-red-600 block">Details</a>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button class="btn bg-komola rounded-md md:rounded-lg text-white text-lg md:text-2xl font-semibold border-0 normal-case py-2 px-4 md:py-5 md:px-7 h-auto">Shop All</button>
+        </div>
+      </section>
     </main>
     <footer>
 
