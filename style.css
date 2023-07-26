@@ -37,3 +37,8 @@ p{
 .icons a{
     width: 2rem;
 }
+@media screen and (min-width:1024px) {
+    .icons a{
+        width: 4rem;
+    }
+}
