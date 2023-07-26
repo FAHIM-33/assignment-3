@@ -20,6 +20,7 @@ p{
 .team{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.651)),url(./images/banner1.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     color: white;
     
@@ -37,6 +38,27 @@ p{
 .icons a{
     width: 2rem;
 }
+
+
+@media screen and (max-width:767px) {
+    .single-cell{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .single-cell hr{
+        margin: 1.5rem auto 1rem auto;
+    }
+    .single-cell p{
+        max-width: 50%;
+        margin: 0 auto;
+        line-height: 1.6rem;
+    }
+
+}
+
+
 @media screen and (min-width:1024px) {
     .icons a{
         width: 4rem;
